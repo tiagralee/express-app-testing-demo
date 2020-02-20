@@ -8,7 +8,7 @@ describe('isValidCommaDelimitedList(value)', () => {
 
   test('should return true for valid single search term', () => {
     const tags = 'dogs';
-    expect(formValidator.isValidCommaDelimitedList(tags)).toBe(false);
+    expect(formValidator.isValidCommaDelimitedList(tags)).toBe(true);
   });
 
   test('should return false for search term containing numbers', () => {
